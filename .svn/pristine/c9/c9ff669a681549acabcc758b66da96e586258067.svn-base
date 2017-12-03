@@ -1,0 +1,30 @@
+package com.etc.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.etc.entity.Admin;
+import com.etc.utils.BaseDao;
+
+public class AdminDao {
+
+	   private BaseDao bd = new BaseDao();
+
+	public AdminDao() {
+          bd.getConn();
+	}
+   public List<Admin> queryAllAdmin(){
+	   String sql = "SELECT * FROM T_ADMIN";
+	   List<Admin> list = (List<Admin>)bd.select(sql, Admin.class, null);
+	return list;
+   }
+   public List<Admin> querySimpleAdmin(String name,String password){
+	   String sql = "SELECT * FROM T_ADMIN WHERE ADMINNAME = ? AND PASSWORD=?";
+	   ArrayList<Object> param = new ArrayList<Object>();
+	   param.add(name);
+	   param.add(password);
+	  List<Admin> admin = (List<Admin>) bd.select(sql, Admin.class, param.toArray());
+	   return admin;
+   }
+	   
+}

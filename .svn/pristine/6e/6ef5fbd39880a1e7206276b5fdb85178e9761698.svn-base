@@ -1,0 +1,101 @@
+*{
+	padding: 0;
+	margin:0;
+}
+#form{
+	position: absolute;
+	margin: 100px;;
+}
+#logo img{
+	margin: 20px;
+}
+#back img{
+	margin: 20px 100px;
+	text-align: center;
+	display: inline;
+}
+@CHARSET "UTF-8";
+
+body {
+	background-color: #F4F4F4;
+}
+
+#content {
+	text-align: center;
+	margin-top: 100px;
+}
+
+#panel {
+	border: 1px solid #ddd;
+	padding: 20px;
+	display: inline-block;
+	background-color: white;
+	border-radius: 5px;
+}
+
+#panel .group input {
+	display: block;
+	width: 250px;
+	height: 33px;
+	padding-left: 7px;
+	border: 1px solid #ddd;
+	font-size: 15px;
+}
+
+#panel .group input:focus {
+	outline: none;
+	border-left-color: #CC865E;
+}
+
+#panel .group label {
+	display: block;
+	text-align: left;
+	font-size: 20px;
+}
+
+#content button {
+	color: white;
+	font-size: 18px;
+	height: 33px;
+	border: 0px;
+}
+
+#content .login {
+	margin-top: 20px;
+}
+
+#content .login input{
+	width: 240px;
+	color: white;
+	background-color: #CC865E;
+	font-size: 18px;
+	height: 33px;
+	border: 0px;
+}
+
+#content .login input:hover {
+	background-color: white;
+	color: #CC865E;
+	border: 1px solid #CC865E;
+	cursor: pointer;
+}
+/*.login input{ border:none; background:#FF7709;font-size:14px;color:#fff; font-weight:bold;height:40px;}*/
+#content .reg {
+	margin-top: 20px;
+}
+
+#content .reg button {
+	width: 180px;
+	background-color: #466BAF;
+}
+
+#content .reg button:hover {
+	background-color: white;
+	color: #466BAF;
+	border: 1px solid #466BAF;
+	cursor: pointer;
+}
+#total{
+	position: absolute;
+	margin:  0px 860px;;
+}

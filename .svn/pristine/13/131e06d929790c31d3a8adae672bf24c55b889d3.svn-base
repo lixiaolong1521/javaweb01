@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h1>基本信息</h1>
+		<form action="" method="get">
+		<p>头&nbsp;像&nbsp;:&nbsp;</p>
+		<p>昵&nbsp;称&nbsp;:&nbsp;<input type="text"></p>
+		<script>document.getElementsByName("sex")[0].checked="checked";</script>
+		<p>
+		性&nbsp;别&nbsp;:
+		<label for="male">&nbsp;男&emsp;<input type="radio" name="sex" id="male"></label>
+		<label for="female">&nbsp;女&emsp;<input type="radio" name="sex" id="female"></label>
+		</p>
+		<p>手机号&nbsp;:&nbsp;<input type="text"></p>
+		<input type="submit" value="保存">
+		</form>
+	</div>
+</body>
+</html>

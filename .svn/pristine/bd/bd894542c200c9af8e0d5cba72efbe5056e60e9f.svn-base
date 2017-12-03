@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>backstage.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+   <link rel = "stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <script type="text/javascript" src="js/tests/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+  </head>
+  <body>
+
+<ul class="nav nav-pills nav-justified ">
+
+<!-- 导航 -->
+  <li role="presentation" class="active"><a href="#">后台首页</a></li>
+  <li role="presentation"><a href="#">用户管理</a></li>
+  <li role="presentation"><a href="#">
+ <!--  <div class="dropdown"> -->
+  <a href="#" class="dropdown  dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    商品管理
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="text-align: center;">
+    <li><a href="#" id="productList" >商品列表</a></li>
+    <li><a href="#">商品分类</a></li>
+    <li><a href="#">商品状态</a></li>
+  </ul>
+<!-- </div> -->
+  </a></li>
+  <li role="presentation"><a href="#">订单管理</a></li>
+</ul>
+<!-- 路径导航 -->
+<ol class="breadcrumb">
+  <li><a href="#">后台首页</a></li>
+  <li><a href="#">商品管理</a></li>
+  <li class="active">商品分类</li>
+</ol>
+<!-- 页面主要内容 -->
+<div id="mainContent">
+<table class="table">
+	<caption>基本的表格布局</caption>
+   <thead>
+      <tr>
+       <th><input type="checkbox"></th>
+         <th>ID</th>
+         <th>商品名称</th>
+         <th>所属分类</th>
+          <th>商品图片</th>
+           <th>商品价格</th>
+            <th>商品描述</th>
+             <th>商品库存</th>
+             <th>操作</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+       <th><input type="checkbox"></th>
+         <td>56</td>
+         <td>小米6</td>
+         <td>xxx系列</td>
+         <td><img src="img/phonebrand.jpg"></td>
+         <td>3000</td>
+         <td>真的好用,煎鸡蛋很快,国产第一手机</td>
+         <td>336</td>
+      </tr>
+      <tr>
+       <th><input type="checkbox"></th>
+         <td>45</td>
+         <td>10x</td>
+      </tr>
+   </tbody>
+</table>
+</div>
+<!-- 分页 -->
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<script type="text/javascript">
+
+$("#productList").click(function(){
+   $("#mainContent").empty();
+   
+});
+
+
+</script>
+  </body>
+</html>

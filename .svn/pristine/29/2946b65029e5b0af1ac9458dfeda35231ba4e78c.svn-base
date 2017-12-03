@@ -1,0 +1,13 @@
+package com.etc.dao;
+
+import com.etc.utils.BaseDao;
+
+public class DaoTest {
+      public static void main(String[] args) {
+		AdminDao ad = new AdminDao();
+		System.out.println(ad.queryAllAdmin());
+		System.out.println("xxx");
+    	System.out.println(ad.querySimpleAdmin("ADMIN001", "123456"));
+    	  
+	}
+}

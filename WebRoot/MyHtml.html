@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyHtml.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  
+  <body>
+ <h2>创建模态框（Modal）</h2>
+ <button class='btn btn-primary btn-lg' data-toggle='modal' data-target='#myModal'>新增商品</button>
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">新增商品</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;</button>
+				<h4 class="modal-title" id="myModalLabel">新增商品</h4>
+			</div>
+			<div class="modal-body">
+			<form action="" method="get" id="form_addProduct">
+			<table class="table">
+			<tbody>
+			<tr><td>品牌：<input type="text" id="addBrand" ></td></tr>
+			<tr><td>型号：<input type="text" id="addModel"></td></tr>
+			<tr><td>图片：<input type="image" id="addImg"></td></tr>
+			<tr><td>价格：<input type="text" id="addPrice"></td></tr>
+		    <tr><td>颜色：<input type="text" id="addColor"></td></tr>
+		    <tr><td>内存：<input type="text" id="addStorage"></td></tr>
+		    <tr><td>库存：<input type="text" id="addInventory"></td></tr>
+		    <tr><td>版本：<input type="text" id="addVersion"></td></tr>
+		    <tr><td>类型：<input type="text" id="addType"></td></tr>
+			</tbody>
+			</table>
+			</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<button type="button" class="btn btn-primary">
+					提交更改
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
